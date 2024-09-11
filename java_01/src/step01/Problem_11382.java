@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class Problem_11382 {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-		String str = sc.nextLine(); // 77 77 7777
+		String str = sc.nextLine(); 
 		String[] arr = str.split(" ");
-		long[] numArr = new long[3];
+		long[] numArr = new long[3]; // int자료형은 약 21억까지만 저장가능하기 때문에 값이 10^12일 때 런타임에러가 발생한다.
 		
 		for(int i = 0; i < arr.length; i++) {
 			numArr[i] = Long.parseLong(arr[i]);
