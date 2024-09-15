@@ -16,10 +16,14 @@ public class StringDemo {
 		String str6 = "";
 		
 		
+		str1.replace("개", "소");
+		System.out.println(str1);
 		
 		
-		
-		
+		String before = "   개  나  리   ";
+		String after = before.trim();
+		System.out.println(before);
+		System.out.println(after);
 		
 		
 	}
