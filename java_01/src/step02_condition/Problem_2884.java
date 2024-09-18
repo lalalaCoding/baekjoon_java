@@ -1,4 +1,4 @@
-package step02;
+package step02_condition;
 import java.util.Scanner;
 
 public class Problem_2884 {

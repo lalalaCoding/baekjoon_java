@@ -1,4 +1,4 @@
-package step01;
+package step01_operator;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package step02;
+package step02_condition;
 
 import java.util.ArrayList;
 import java.util.Collections;

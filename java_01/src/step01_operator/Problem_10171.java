@@ -1,4 +1,4 @@
-package step01;
+package step01_operator;
 
 public class Problem_10171 {
 	public static void main(String[] args) {
