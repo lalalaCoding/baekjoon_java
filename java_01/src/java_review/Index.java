@@ -1,4 +1,4 @@
-package java_01;
+package java_review;
 
 import java_01.array.ArrayCopy;
 import java_01.scope.ScopeDemo;
