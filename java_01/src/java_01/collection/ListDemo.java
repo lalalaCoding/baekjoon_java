@@ -11,5 +11,8 @@ public class ListDemo {
 		list.add("진달래");
 		List<String> subList = list.subList(1, 2); // 1 <= index < 2
 		System.out.println(subList);
+		
+		System.out.println(list.size());
+		
 	}
 }
