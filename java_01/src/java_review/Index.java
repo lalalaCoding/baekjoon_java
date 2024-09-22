@@ -24,7 +24,11 @@ public class Index {
 		
 		
 		// 
+		StringBuffer sb = new StringBuffer("");
+		sb.append("\\");
 		
+		String test = "\\abc";
+		System.out.println(sb);
 		
 		
 		
