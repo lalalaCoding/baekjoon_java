@@ -1,5 +1,6 @@
 package java_review;
 
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Index {
@@ -23,12 +24,17 @@ public class Index {
 		System.out.println(a);
 		
 		
-		// 
-		StringBuffer sb = new StringBuffer("");
-		sb.append("\\");
+		// String.split(" ") 을 테스트하자.
+		String[] arr1 = " ".split(" ");
+		System.out.println(Arrays.toString(arr1)); // [] -> 길이 0인 문자열 배열
 		
-		String test = "\\abc";
-		System.out.println(sb);
+		String[] arr2 = " 개 나 리".split(" ");
+		System.out.println(Arrays.toString(arr2)); // [, 개, 나, 리] -> 길이 4인 문자열 배열
+		
+		String[] arr3 = " 개 나 리 ".split(" ");
+		System.out.println(Arrays.toString(arr3)); // [, 개, 나, 리] -> 길이 4인 문자열 배열
+		
+		
 		
 		
 		
