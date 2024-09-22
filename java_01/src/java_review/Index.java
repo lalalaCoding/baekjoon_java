@@ -35,8 +35,13 @@ public class Index {
 		System.out.println(Arrays.toString(arr3)); // [, 개, 나, 리] -> 길이 4인 문자열 배열
 		
 		
+		// StringBuffer도 파싱이 될까?
+		StringBuffer sb = new StringBuffer("123");
+//		System.out.println(Integer.parseInt(sb)); // 안됨
+		String str1 = sb.toString();
+		System.out.println(str1);
 		
-		
-		
+		// String.contains() 테스트
+		System.out.println("ABC".contains("A"));
 	}
 }
