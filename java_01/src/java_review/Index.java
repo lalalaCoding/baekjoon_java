@@ -48,6 +48,14 @@ public class Index {
 		StringBuffer sb1 = new StringBuffer("123");
 		System.out.println(sb.toString().equals(sb1.toString()));
 		
+		String test = "안 녕/하/세.요?";
+		StringTokenizer test2 = new StringTokenizer(test, " +/.?", true);
+		
+		while(test2.hasMoreTokens()) {
+			System.out.println(test2.nextToken());
+			
+		}
+		
 		
 	}
 }
