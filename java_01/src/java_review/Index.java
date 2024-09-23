@@ -43,5 +43,11 @@ public class Index {
 		
 		// String.contains() 테스트
 		System.out.println("ABC".contains("A"));
+		
+		// StringBuffer
+		StringBuffer sb1 = new StringBuffer("123");
+		System.out.println(sb.toString().equals(sb1.toString()));
+		
+		
 	}
 }
