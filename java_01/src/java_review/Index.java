@@ -56,6 +56,16 @@ public class Index {
 			
 		}
 		
+		// 줄바꿈을 기준으로 토큰을 만드는 테스트
+		String newLine = "개나리\n진달래";
+		StringTokenizer st10 = new StringTokenizer(newLine, "\n");
+		
+		
+		System.out.println(st10.nextToken());
+		System.out.println(st10.nextToken());
+		
+		
+		
 		
 	}
 }
