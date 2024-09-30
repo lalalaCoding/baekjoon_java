@@ -60,12 +60,12 @@ public class Index {
 		String newLine = "개나리\n진달래";
 		StringTokenizer st10 = new StringTokenizer(newLine, "\n");
 		
-		
 		System.out.println(st10.nextToken());
 		System.out.println(st10.nextToken());
 		
-		
-		
+		// 이중배열 테스트
+		int[] numArr = {1, 2, 3};
+		int[] numArr2 = {4, 5, 6};
 		
 	}
 }
