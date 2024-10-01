@@ -1,7 +1,37 @@
 package java_01.collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
+class SortTest implements Comparable<SortTest>{
+	private String name;
+	private int age;
+	
+	public SortTest(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	@Override
+	public int compareTo(SortTest o) {
+		Integer standard = this.age;
+		Integer obj = o.getAge();
+		
+		
+		return -standard.compareTo(obj); // age의 값을 기준으로 내림차순 정렬
+	}
+	
+	public int getAge() {
+		return this.age;
+	}
+
+	
+	
+	
+}
+
+
 
 public class ListDemo {
 	public static void main(String[] args) {
@@ -13,6 +43,17 @@ public class ListDemo {
 		System.out.println(subList);
 		
 		System.out.println(list.size());
+		
+		// List 정렬 테스트
+		ArrayList<SortTest> sortTest = new ArrayList<SortTest>();
+		sortTest.add(new SortTest("짱구", 5));
+		sortTest.add(new SortTest("도라에몽", 100));
+		System.out.println(sortTest);
+		Collections.sort(sortTest);
+		
+		
+		
+		
 		
 	}
 }

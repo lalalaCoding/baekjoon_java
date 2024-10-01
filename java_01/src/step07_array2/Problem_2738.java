@@ -16,7 +16,7 @@ public class Problem_2738 {
 			int row = Integer.parseInt(st.nextToken());
 			int col = Integer.parseInt(st.nextToken());
 			
-			int[][] arr1 = new int[row][col]; // new 자료형[행][열]
+			int arr1[][] = new int[row][col]; // new 자료형[행][열]
 			int[][] arr2 = new int[row][col];
 		
 			for(int i = 0; i < row; i++){
