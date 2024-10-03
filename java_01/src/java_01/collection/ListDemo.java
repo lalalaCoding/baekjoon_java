@@ -2,6 +2,7 @@ package java_01.collection;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 class SortTest implements Comparable<SortTest>{
@@ -40,20 +41,22 @@ public class ListDemo {
 		list.add("소나무");
 		list.add("진달래");
 		List<String> subList = list.subList(1, 2); // 1 <= index < 2
-		System.out.println(subList);
+		//System.out.println(subList);
 		
-		System.out.println(list.size());
+		//System.out.println(list.size());
 		
 		// List 정렬 테스트
 		ArrayList<SortTest> sortTest = new ArrayList<SortTest>();
 		sortTest.add(new SortTest("짱구", 5));
 		sortTest.add(new SortTest("도라에몽", 100));
-		System.out.println(sortTest);
+		//System.out.println(sortTest);
 		Collections.sort(sortTest);
 		
+		// List 초기화 테스트
+		ArrayList<String> list100 = new ArrayList<String>();
+		System.out.println(list100);
 		
-		
-		
-		
+		HashSet<String> set = new HashSet<String>();
+		System.out.println(set);
 	}
 }
