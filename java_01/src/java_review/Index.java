@@ -67,5 +67,14 @@ public class Index {
 		int[] numArr = {1, 2, 3};
 		int[] numArr2 = {4, 5, 6};
 		
+		//
+		int number = 60466175;
+		int notation = 36;
+		System.out.println(number / notation);
+		System.out.println(number % notation);
+		
+		
+		
+		
 	}
 }
