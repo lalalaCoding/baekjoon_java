@@ -2,6 +2,7 @@ package java_01.collection;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -26,7 +27,11 @@ public class SetDemo {
 		System.out.println(result);
 		
 		
-		
+		// LikedHashSet
+		LinkedHashSet<String> lSet = new LinkedHashSet<String>();
+		lSet.add("개나리");
+		lSet.add("개나리");
+		System.out.println(lSet); // 저장 순서 유지O, 중복 저장 X
 		
 		
 		

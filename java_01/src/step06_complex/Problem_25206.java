@@ -1,3 +1,5 @@
+package step06_complex;
+
 import java.io.*;
 
 public class Problem_25206{
