@@ -26,8 +26,6 @@ public class E11659_구간합구하기4 {
 				}
 			}
 			
-			System.out.println(Arrays.toString(s));
-			
 			for(int i = 0; i < count; i++) {
 				StringTokenizer st3 = new StringTokenizer(br.readLine(), " ");
 				//"1 3" -> a[0]+a[1]+a[2] -> s[2]
