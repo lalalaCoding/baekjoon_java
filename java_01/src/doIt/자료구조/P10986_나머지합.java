@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class P10986_나머지합 {
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt();
+		int N = sc.nextInt(); 
 		int M = sc.nextInt();
-		long[] S = new long[N];
+		long[] S = new long[N]; 
 		long[] C = new long[M];
 		long answer = 0;
 		
