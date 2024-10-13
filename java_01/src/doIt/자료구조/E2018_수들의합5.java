@@ -14,16 +14,16 @@ public class E2018_수들의합5 {
 		int end_index = 1; // 부분 합에 대한 끝 숫자
 		
 		while(end_index != N) {
-			if(sum > N) { // 연속된 자연수의 합이 N보다 큼
-				sum = sum - start_index; // 부분 합의 결과 보정
+			if(sum > N) { // 현재 연속된 합이 N보다 큼
+				sum = sum - start_index; // 부분 합의 시작 값 보정
 				start_index++;// 시작 값을 1 증가
 			} else if(sum < N) { // 현재 연속된 합이 N보다 작음
 				end_index++; // 끝 숫자를 1 증가
-				sum = sum + end_index;
-			} else {
-				count++;
-				end_index++;
-				sum = sum + end_index;
+				sum = sum + end_index; // 부분 합을 다시 계산
+			} else { // 현재 연속된 합이 N과 같음
+				count++; // 경우의 수를 1 증가
+				end_index++; // 끝 숫자를 1 증가
+				sum = sum + end_index; // 부분 합 다시 계산
 			}
 		}
 		
