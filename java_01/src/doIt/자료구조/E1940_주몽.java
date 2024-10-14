@@ -58,9 +58,5 @@ public class E1940_주몽 {
 			// 결과 출력
 			System.out.println(String.valueOf(count));
 		}
-		
-		
-		
-		
 	}
 }
