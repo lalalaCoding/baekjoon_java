@@ -1,8 +1,9 @@
 package java_01.collection;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Properties;
+import java.util.Set;
 
 public class MapDemo {
 	public static void main(String[] args) {
@@ -18,6 +19,12 @@ public class MapDemo {
 		arr[0] = "개나리";
 		arr[1] = new Integer(1);
 		System.out.println(Arrays.toString(arr));
+		
+		
+		Properties prop = new Properties();
+		prop.setProperty("이름", "개나리");
+		
+		Set<Object> pSet = prop.keySet(); //제네릭이 Object임에 주의!
 		
 		
 		
