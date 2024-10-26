@@ -58,5 +58,7 @@ public class ListDemo {
 		
 		HashSet<String> set = new HashSet<String>();
 		System.out.println(set);
+		
+		List.of();
 	}
 }
