@@ -48,7 +48,7 @@ public class E1517_버블소트 {
                 A[position] = tmp[index2];
                 index2++;
                 position++;
-                swapCount += index2 - position; //
+                swapCount += index2 - position; //오른쪽 집합의 데이터가 몇칸 앞으로 이동했는가 = swap이 몇번 일어났는가
             } else {
                 A[position] = tmp[index1];
                 index1++;
@@ -59,7 +59,7 @@ public class E1517_버블소트 {
         while (index1 <= mid) { //왼쪽 집합에서 꺼낼 데이터가 남은 경우
             A[position] = tmp[index1];
             index1++;
-            position++; //오른쪽 집합의 데이터가 몇칸 앞으로 이동했는가 = swap이 몇번 일어났는가
+            position++;
         }
         while (index2 <= end) { //오른쪽 집합에서 꺼낼 데이터가 남은 경우
             A[position] = tmp[index2];
