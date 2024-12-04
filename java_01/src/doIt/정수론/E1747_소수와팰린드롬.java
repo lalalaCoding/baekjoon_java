@@ -16,7 +16,7 @@ public class E1747_소수와팰린드롬 {
         }
         
         //에라토스테네스의 체 : 소수 구하기
-        for (int i = 2; i <= Math.sqrt((double)A.length); i++) {
+        for (int i = 2; i <= Math.sqrt(A.length); i++) {
             if (A[i] != 0) {
                 for (int j = i + i; j < A.length; j += i) {
                     A[j] = 0;
@@ -24,7 +24,7 @@ public class E1747_소수와팰린드롬 {
             }
         }
         
-        //팰린드롬 수 체크하기
+        //가장 작은 팰린드롬 수 구하기
         for (int i = N; i < A.length; i++) {
             if(A[i] != 0) {
                 if (isPalindrome(A[i])) {
