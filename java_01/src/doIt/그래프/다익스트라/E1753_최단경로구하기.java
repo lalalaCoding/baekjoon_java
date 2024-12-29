@@ -38,7 +38,7 @@ public class E1753_최단경로구하기 {
             graph[begin_node].add(new MyNode(end_node, value));
         }
 
-        //
+        //다익스트라 구현
         pq.offer(new MyNode(start, 0));
         while (!pq.isEmpty()) {
             MyNode current = pq.poll(); //탐색 기준 노드 정보 꺼내기: 최단 거리 노드가 항상 선택됨
